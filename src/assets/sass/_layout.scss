@@ -1,0 +1,7 @@
+html {
+	box-sizing: border-box;
+	background: $color-white;
+}
+body, >* {
+	box-sizing: inherit;
+}
