@@ -2,7 +2,11 @@
   <div class="home">
 
 		<!-- <header>
-			<h1>Simon<br />Dagfinrud</h1>
+			<h1 class="part title anim1">Simon<br />Dagfinrud</h1>
+			<span class="part line anim2"></span>
+			<a class="part contact anim3" href="tel:004741443922">41443922</a>
+			<span class="part line anim4"></span>
+			<a class="part contact anim5" href="mailto:hi@semon.je">hi@semon.je</a>
 		</header> -->
 
 		<main>
@@ -14,16 +18,15 @@
 						<a href="tel:004741443922" class="part phone anim slide delay-1">(+47) 41 44 39 22</a>
 					</span>
 				</li>
-				<br />
 				<li v-for="l in list">
 					<a class="wrap" :href="l.link" target="_blank">
-						<span class="part anim slide delay-125">{{ l.title }}</span>
+						<span class="part text">{{ l.title }}</span>
 						<span class="part line"></span>
-						<span class="part anim slide delay-125">{{ l.description }}</span>
+						<span class="part text">{{ l.description }}</span>
 						<span class="part line"></span>
-						<span class="part anim slide delay-125">{{ l.date }}</span>
+						<span class="part text">{{ l.date }}</span>
 						<span class="part line"></span>
-						<span class="part anim slide delay-125">{{ l.client }}</span>
+						<span class="part text">{{ l.client }}</span>
 					</a>
 				</li>
 			</ul>
@@ -40,7 +43,7 @@ export default {
   name: 'home',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: 'heisann',
 			list: [
 				{
 					title: 'Sprekest',
@@ -56,13 +59,13 @@ export default {
 					client: 'Racer',
 					date: '2016'
 				},
-				{
-					title: 'Phew',
-					link: 'http://semon.je/phew',
-					description: 'For Philips Hue',
-					client: 'Self',
-					date: '2017'
-				},
+				// {
+				// 	title: 'Phew',
+				// 	link: 'http://semon.je/phew',
+				// 	description: 'For Philips Hue',
+				// 	client: 'Self',
+				// 	date: '2017'
+				// },
 				{
 					title: 'Stempl',
 					link: 'http://stempl.no',
@@ -77,20 +80,20 @@ export default {
 					client: 'Self',
 					date: '2017'
 				},
-				{
-					title: 'Optimal Helseklinikk',
-					link: 'http://optimalhelseklinikk.no',
-					description: 'Terapeuts & fitness',
-					client: 'Optimal',
-					date: '2017'
-				},
-				{
-					title: 'Ørsta Røde Kors',
-					link: 'http://orstarodekors.no',
-					description: 'First aid',
-					client: 'Røde Kors',
-					date: '2017'
-				},
+				// {
+				// 	title: 'Optimal Helseklinikk',
+				// 	link: 'http://optimalhelseklinikk.no',
+				// 	description: 'Terapeuts & fitness',
+				// 	client: 'Optimal',
+				// 	date: '2017'
+				// },
+				// {
+				// 	title: 'Ørsta Røde Kors',
+				// 	link: 'http://orstarodekors.no',
+				// 	description: 'First aid',
+				// 	client: 'Røde Kors',
+				// 	date: '2017'
+				// },
 				{
 					title: 'SBM Arena',
 					link: 'http://sbmarena.no',
@@ -129,8 +132,8 @@ export default {
 				{
 					title: 'Tindebygget',
 					link: 'http://tindebygget.no',
-					description: 'Events & fun',
-					client: 'SBM Arena',
+					description: 'Office rentals',
+					client: 'Tindebygget',
 					date: '2016'
 				},
 				{
@@ -149,7 +152,7 @@ export default {
 				},
 				{
 					title: '#Voldaruss15',
-					link: 'http://orstaskisenter.no',
+					link: 'https://issuu.com/mk-oskar/docs/russeavisa2015-olav-torh-simon-kare',
 					description: 'Magazine yearbook',
 					client: 'Voldarussen 2015',
 					date: '2015'
@@ -198,48 +201,62 @@ export default {
 <style lang="scss">
 @import '../assets/sass/variables';
 
-header {
-	position: absolute;
-	top: 0; left: 0;
-	right: 0; bottom: 100px;
-	margin: auto;
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	// background: $color-light;
-	color: $color-main;
-	border: solid 6px $color-main;
-	text-align: center;
-	display: flex;
-	cursor: pointer;
-	transition: ease 0.15s all;
-	opacity: 0;
-	animation: pop 0.3s 0.3s both;
-	h1 {
-		flex: 1 1 auto;
-		align-self: center;
-		font-family: $font-bitr;
-		font-weight: 600;
-		font-size: 33px;
-		line-height: 1.25em;
-	}
-}
-
-
-
 @keyframes line {
 	from { right: 100%; }
 	to	 { right: 0%; }
 }
 
+header {
+	position: relative;
+	margin: $spacing-big auto;
+	margin-top: $spacing-big*2;
+	width: $width;
+	max-width: $width-max;
+	// background: $color-light;
+	color: $color-main;
+	text-align: left;
+	display: flex;
+	transition: ease 0.15s all;
+	.part {
+		display: inline-block;
+		font-family: $font-ps2p;
+		text-decoration: none;
+		vertical-align: bottom;
+		align-self: flex-end;
+		color: $color-main;
+		animation: slide 0.3s 0.5s both;
+		&.line {
+			flex: 1 1 auto;
+			height: 10px;
+			background: $color-light;
+			margin: 3px 20px;
+		}
+		&.anim1 { animation-delay: 0.25s; }
+		&.anim2 { animation-delay: 0.40s; }
+		&.anim3 { animation-delay: 0.55s; }
+		&.anim4 { animation-delay: 0.70s; }
+		&.anim5 { animation-delay: 0.85s; }
+	}
+	.title {
+		display: inline-flex;
+		font-family: $font-ps2p;
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 1.25em;
+		align-self: flex-end;
+		margin: 0;
+		animation: slide 0.3s 0.25s both;
+	}
+}
+
+
+
 main {
-	position: absolute;
-	width: 50%;
-	top: 20%;
-	// bottom: 10%;
-	left: 7.5%;
-	right: 7.5%;
-	margin: auto;
+	position: relative;
+	width: $width;
+	max-width: $width-max;
+	top: 0%;
+	margin: $spacing-big*1.5 auto;
 	ul {
 		padding: 0;
 		margin: 0;
@@ -247,13 +264,15 @@ main {
 		li {
 			padding: 0;
 			margin: 0;
+			cursor: pointer;
 			.wrap {
-				padding: 0;
-				margin: 20px 0;
+				padding: 10px 0;
+				margin: 0;
 				display: flex;
 				align-content: stretch;
 				justify-content: space-between;
 				text-decoration: none;
+				// transition: ease 0.3s all;
 				.part {
 					display: inline-block;
 					width: auto;
@@ -264,28 +283,57 @@ main {
 					text-decoration: none;
 					color: $color-main;
 					letter-spacing: 0.05em;
+					transition: ease 0.3s all;
+					&.text {
+						animation: slide 0.3s both;
+						animation-delay: 0.5s;
+					}
 					&.line {
 						height: 6px;
 						margin: 2px 30px;
 						flex: 1 1 auto;
-						// background: #f9f9ff;
+						background: $color-main;
 						position: relative;
+						transition: none;
+						animation: pop 0.3s both;
+						animation-delay: 0.25s;
 						&:before {
 							content: "";
-							background: $color-main;
+							background: $color-light;
 							// background: #f9f9ff;
 							display: inline-block;
 							position: absolute;
 							left: 0;
 							right: 0;
 							top: 0; bottom: 0;
-							animation: line 0.5s 0.5s both;
+							transition: ease 0.3s all;
+							animation: line 0.5s 0.9s both;
 						}
 						// background: $color-main;
 					}
 				}
 			}
 		}
+	}
+	&:hover {
+		ul li .wrap {
+			.part {
+				color: $color-light;
+			}
+			&:hover {
+				.part {
+					color: $color-main;
+					transition: 0s;
+					&.line {
+						background: $color-main;
+						&:before { left: 100%; }
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 915px) {
+		background: #f30;
 	}
 }
 </style>

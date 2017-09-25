@@ -1,7 +1,7 @@
 
 // colors
-$color-main: #0049ff;
 $color-dark: #203854;
+$color-main: #0049ff;
 $color-light: #FFCCE8;
 $color-white: #FFFFFF;
 
@@ -10,3 +10,12 @@ $color-white: #FFFFFF;
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 $font-bitr: 'Bitter', serif;
 $font-ps2p: 'Press Start 2P', cursive;
+
+// spacing
+$spacing: 50px;
+$spacing-small: $spacing/2;
+$spacing-big: $spacing*2;
+
+// lengths
+$width: 850px;
+$width-max: 90%;
