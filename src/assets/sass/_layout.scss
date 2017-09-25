@@ -5,3 +5,34 @@ html {
 body, >* {
 	box-sizing: inherit;
 }
+
+
+@keyframes pop {
+	from { transform: scale(0.9); opacity: 0; }
+	to   { transform: scale(1); opacity: 1; }
+}
+@keyframes slide {
+	from { transform: translate(-10px,0); opacity: 0; }
+	to   { transform: translate(0,0); opacity: 1; }
+}
+
+.anim {
+
+	&.pop {
+		animation: pop 0.15s both;
+	}
+	&.slide {
+		animation: slide 0.3s both;
+	}
+
+
+	&.delay {
+		&-025 	{ animation-delay: 0.25s; }
+		&-05 		{ animation-delay: 0.50s; }
+		&-075 	{ animation-delay: 0.75s; }
+		&-1 		{ animation-delay: 1.00s; }
+		&-125 	{ animation-delay: 1.25s; }
+		&-15 		{ animation-delay: 1.50s; }
+		&-175 	{ animation-delay: 1.75s; }
+	}
+}
