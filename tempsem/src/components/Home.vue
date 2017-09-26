@@ -15,7 +15,7 @@
 					<span class="wrap">
 						<a href="mailto:hi@semon.je" class="part email anim slide delay-025">hi@semon.je</a>
 						<span class="part line"></span>
-						<a href="tel:004741443922" class="part phone anim slide delay-1">(+47) 41 44 39 22</a>
+						<a href="tel:004741443922" class="part phone anim slide delay-025">(+47) 41 44 39 22</a>
 					</span>
 				</li>
 				<li v-for="l in list">
@@ -290,7 +290,7 @@ main {
 					}
 					&.line {
 						height: 6px;
-						margin: 2px 30px;
+						margin: 2px 10px;
 						flex: 1 1 auto;
 						background: $color-main;
 						position: relative;
