@@ -326,7 +326,7 @@ main {
 					transition: 0s;
 					&.line {
 						background: $color-main;
-						&:before { left: 100%; }
+						&:before { transition: none; left: 100%; }
 					}
 				}
 			}
