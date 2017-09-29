@@ -94,48 +94,49 @@ export default {
 				// 	client: 'Røde Kors',
 				// 	date: '2017'
 				// },
+                                {
+					title: 'Hum Mag',
+					link: '#',
+					description: 'Youth magazine',
+					client: 'Røde Kors',
+					date: '2016'
+				},
+                                {
+					title: 'Fjord Fabrics',
+					link: 'http://fjordfabrics.no',
+					description: 'Exquisite brands',
+					client: 'Racer',
+					date: '2016'
+				},
+                                {
+					title: 'Blåhuset',
+					link: 'http://blahuset.no',
+					description: 'Shopping center',
+					client: 'Racer',
+					date: '2016'
+				},
+                                {
+					title: 'Tindebygget',
+					link: 'http://tindebygget.no',
+					description: 'Office rentals',
+					client: 'Racer',
+					date: '2016'
+				},
 				{
 					title: 'SBM Arena',
 					link: 'http://sbmarena.no',
 					description: 'Events & fun',
-					client: 'SBM Arena',
+					client: 'Racer',
 					date: '2017'
 				},
 				{
 					title: 'Vertikalservice',
 					link: 'http://vertikalservice.no',
 					description: 'Offshore inspection',
-					client: 'Vertikalservice',
+					client: 'Racer',
 					date: '2017'
 				},
-				{
-					title: 'Blåhuset',
-					link: 'http://blahuset.no',
-					description: 'Shopping center',
-					client: 'Blåhuset',
-					date: '2016'
-				},
-				{
-					title: 'Hum Mag',
-					link: 'http://defi.no',
-					description: 'Youth magazine',
-					client: 'Røde Kors Norge',
-					date: '2016'
-				},
-				{
-					title: 'Fjord Fabrics',
-					link: 'http://fjordfabrics.no',
-					description: 'Exquisite brands',
-					client: 'Fjord Fabrics',
-					date: '2016'
-				},
-				{
-					title: 'Tindebygget',
-					link: 'http://tindebygget.no',
-					description: 'Office rentals',
-					client: 'Tindebygget',
-					date: '2016'
-				},
+				
 				{
 					title: 'Defi',
 					link: 'http://defi.no',
@@ -159,8 +160,8 @@ export default {
 				},
 				{
 					title: 'Fadderveka',
-					link: 'http://defi.no',
-					description: 'University beginnigns',
+					link: '#',
+					description: 'Buddy week!',
 					client: 'STiV',
 					date: '2015'
 				},
