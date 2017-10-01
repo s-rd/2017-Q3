@@ -136,7 +136,7 @@ export default {
 					client: 'Racer',
 					date: '2017'
 				},
-				
+
 				{
 					title: 'Defi',
 					link: 'http://defi.no',
@@ -300,7 +300,7 @@ main {
 						animation-delay: 0.25s;
 						&:before {
 							content: "";
-							background: $color-light;
+							background: $color-white;
 							// background: #f9f9ff;
 							display: inline-block;
 							position: absolute;
@@ -319,7 +319,10 @@ main {
 	&:hover {
 		ul li .wrap {
 			.part {
-				color: $color-light;
+				color: $color-white;
+				&.line {
+					background: $color-main;
+				}
 			}
 			&:hover {
 				.part {
