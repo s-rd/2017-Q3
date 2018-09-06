@@ -13,7 +13,7 @@
 			<ul>
 				<li>
 					<span class="wrap">
-						<a href="mailto:hi@semon.je" class="part email anim slide delay-025">hi@semon.je</a>
+						<a href="mailto:hi@semonje.studio" class="part email anim slide delay-025">hi@semonje.studio</a>
 						<span class="part line"></span>
 						<a href="tel:004741443922" class="part phone anim slide delay-025">(+47) 41 44 39 22</a>
 					</span>
@@ -43,8 +43,28 @@ export default {
   name: 'home',
   data () {
     return {
-      msg: 'heisann',
 			list: [
+        {
+					title: 'Teston',
+					link: 'https://teston.io',
+					description: 'Test more, test often',
+					client: 'I work here :)',
+					date: '2018'
+				},
+        {
+					title: 'Osteopat Hansen',
+					link: 'https://osteopathansen.no',
+					description: 'Stay healthy',
+					client: 'Osteopat Hansen',
+					date: '2018'
+				},
+        {
+					title: 'Bygdepride',
+					link: 'https://bygdepride.no',
+					description: 'Embrace yourself',
+					client: 'Ørsta/Volda Pride',
+					date: '2018'
+				},
 				{
 					title: 'Sprekest',
 					link: 'http://sprekest.no',
@@ -80,21 +100,14 @@ export default {
 					client: 'Self',
 					date: '2017'
 				},
-				// {
-				// 	title: 'Optimal Helseklinikk',
-				// 	link: 'http://optimalhelseklinikk.no',
-				// 	description: 'Terapeuts & fitness',
-				// 	client: 'Optimal',
-				// 	date: '2017'
-				// },
-				// {
-				// 	title: 'Ørsta Røde Kors',
-				// 	link: 'http://orstarodekors.no',
-				// 	description: 'First aid',
-				// 	client: 'Røde Kors',
-				// 	date: '2017'
-				// },
-                                {
+				{
+					title: 'Ørsta Røde Kors',
+					link: 'http://orstarodekors.no',
+					description: 'First aid',
+					client: 'Røde Kors',
+					date: '2017'
+				},
+        {
 					title: 'Hum Mag',
 					link: '#',
 					description: 'Youth magazine',
@@ -159,39 +172,11 @@ export default {
 					date: '2015'
 				},
 				{
-					title: 'Fadderveka',
-					link: '#',
-					description: 'Buddy week!',
-					client: 'STiV',
-					date: '2015'
-				},
-				{
 					title: 'Orange Aerial',
 					link: 'http://orangeaerial.com',
 					description: 'Helicopter services',
 					client: 'Orange Aerial',
 					date: '2015'
-				},
-				{
-					title: 'Klypa',
-					link: 'http://klypa.no',
-					description: 'Revue entertainment',
-					client: 'Klypa Entertainment',
-					date: '2015'
-				},
-				{
-					title: 'Skår',
-					link: 'http://skarbygg.no',
-					description: 'Entrepreneurs',
-					client: 'Skår Bygg',
-					date: '2015'
-				},
-				{
-					title: 'Frost Media',
-					link: 'http://frostmedia.no',
-					description: 'Location scouting',
-					client: 'Frost Media',
-					date: '2014'
 				},
 			]
     }
@@ -337,7 +322,6 @@ main {
 		}
 	}
 	@media screen and (max-width: 915px) {
-		background: #f30;
 	}
 }
 </style>
